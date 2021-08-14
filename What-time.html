@@ -1,0 +1,40 @@
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+    <title>今何時？</title>
+    <style media="screen">
+      .sone{
+        font-size:2rem;
+      }
+      body{
+        font-family: 'Noto Serif JP', serif;
+      }
+    </style>
+</head>
+<body>
+  <div class="sone">
+
+
+  <h1 style="font-size:2rem;">ただいまの時刻</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <center>
+    <h1 id="time" style="font-size:3.1919rem;"></h1>
+  </center>
+    <a href="main.html">hp作成委員会</a>
+
+    <script>
+    time();
+    function time(){
+        var now = new Date();
+        document.getElementById("time").innerHTML = now.toLocaleTimeString();
+    }
+    setInterval('time()',1000);
+    </script>
+</body>
+</html>
